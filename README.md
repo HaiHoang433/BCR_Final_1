@@ -18,6 +18,16 @@ This is the connection between STM32F4 Discovery and SD Card Module:
 
 ## Implementation
 
-Step 1: Run the cifar10_validation_images_txt_generated.ipynb in Google Colab
-- After running, the .ipynb file will generate 2 zip folders of "cifar10_essential" and "cifar10_full_dataset"
-- Put all the cifar10_batch_1.txt, cifar10_batch_2.txt, ..., cifar10_batch_10.txt into the SD Card
+- Run the cifar10_validation_images_txt_generated.ipynb in Google Colab
+- After running, the .ipynb file will generate 2 zip folders of "[cifar10_essential](https://mega.nz/folder/dJxCEIha#ggBgeCuhP4gDa195bdPYaw/folder/QMBiQZjY)" and "[cifar10_full_dataset](https://mega.nz/folder/dJxCEIha#ggBgeCuhP4gDa195bdPYaw/folder/gAAg1ZjS)"
+- Put all the cifar10_batch_1.txt, cifar10_batch_2.txt, ..., cifar10_batch_10.txt from cifar10_full_dataset folder into the SD Card. 
+
+Configure .ioc file in STM32CubeIDE,
+- RCC: HSE to "Crystal/Ceramic Resonator".
+- SYS: Debug to "Serial Wire".
+- SPI1: Mode to "Full-Duplex Master".
+- FATFS (User-defined): USE_LFN to "Enabled with static working buffer on the BSS"; MAX_SS to "4096".
+
+Then debug the project!
+
+Here is the result: https://mega.nz/folder/dJxCEIha#ggBgeCuhP4gDa195bdPYaw/file/BIJCTRjL
