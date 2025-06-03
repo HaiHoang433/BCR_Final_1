@@ -30,4 +30,6 @@ Configure .ioc file in STM32CubeIDE,
 
 Then debug the project!
 
+![image](https://github.com/user-attachments/assets/4a0ac299-c88d-4fde-b94f-96ad51a8e86b)
+
 Here is the result: https://mega.nz/file/pRYk2apC#6h5KBV-rVbGdtpFFvwjA-nE6wup5yWI5PuW6SYQuTkc
