@@ -12,7 +12,9 @@ Note: The MicroSD must be in FAT32 format.
 
 ## Hardware Connection
 
-...
+This is the connection between STM32F4 Discovery and SD Card Module:
+
+![image](https://github.com/user-attachments/assets/13ddb860-82f9-4bf1-b9bd-370524c03294)
 
 ## Implementation
 
