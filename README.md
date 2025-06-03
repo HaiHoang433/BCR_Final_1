@@ -7,8 +7,9 @@ Main Reference for SD Card Read/Write Module: https://blog.naver.com/PostView.na
 1. STM32F4 Discovery Microcontroller
 2. [SD Card Module](https://linhkienchatluong.vn/module-doc-the-nho/module-doc-the-sd-card_sp497_ct206.aspx)
 3. [MicroSD Kingston Class 10 32GB](https://cellphones.com.vn/the-nho-microsd-kingston-class-10-non-adapter-32gb.html) with [Adapter](https://tuanphong.vn/adapter-the-nho/adapter-microsd-to-sd)
+Note: The MicroSD must be in FAT32 format.
 
-## Hardaware Connection
+## Hardware Connection
 
 ...
 
