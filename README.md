@@ -40,6 +40,12 @@ Configure .ioc file in STM32CubeIDE,
    + Adding these line codes https://github.com/niekiran/Embedded-C/blob/master/All_source_codes/target/itm_send_data.c
    + In _write function, change "__io_putchar(*ptr++);" to "ITM_SendChar(*ptr++);".
  - Configure the main.c
+   + /* USER CODE BEGIN Includes */
+   + /* USER CODE BEGIN PD */
+   + /* USER CODE BEGIN PFP */
+   + /* USER CODE BEGIN 0 */
+   + /* USER CODE BEGIN 2 */
+   + /* USER CODE BEGIN 3 */
 
 Then debug the project!
 
