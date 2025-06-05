@@ -36,6 +36,9 @@ Configure .ioc file in STM32CubeIDE,
   + /* USER CODE BEGIN 0 */
   + void SysTick_Handler(void)
  - Configure "return" at user_diskio.c using functions in fatfs_sd.h
+ - In syscalls.c,
+   + Adding these line codes https://github.com/niekiran/Embedded-C/blob/master/All_source_codes/target/itm_send_data.c
+   + In _write function, change "__io_putchar(*ptr++);" to "ITM_SendChar(*ptr++);".
  - Configure the main.c
 
 Then debug the project!
