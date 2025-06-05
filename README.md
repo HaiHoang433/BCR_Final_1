@@ -29,6 +29,15 @@ Configure .ioc file in STM32CubeIDE,
 - FATFS (User-defined): USE_LFN to "Enabled with static working buffer on the BSS"; MAX_SS to "4096".
 - Set pin PC4 to GPIO_Output.
 
+## Code Implementation
+
+- Adding fatfs_sd.c and fatfs_sd.h
+- In stm32f4xx_it.c, adding codes at:
+  + /* USER CODE BEGIN 0 */
+  + void SysTick_Handler(void)
+ - Configure "return" at user_diskio.c using functions in fatfs_sd.h
+ - Configure the main.c
+
 Then debug the project!
 
 ![image](https://github.com/user-attachments/assets/4a0ac299-c88d-4fde-b94f-96ad51a8e86b)
