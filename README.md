@@ -27,6 +27,7 @@ Configure .ioc file in STM32CubeIDE,
 - SYS: Debug to "Serial Wire".
 - SPI1: Mode to "Full-Duplex Master".
 - FATFS (User-defined): USE_LFN to "Enabled with static working buffer on the BSS"; MAX_SS to "4096".
+- Set pin PC4 to GPIO_Output.
 
 Then debug the project!
 
